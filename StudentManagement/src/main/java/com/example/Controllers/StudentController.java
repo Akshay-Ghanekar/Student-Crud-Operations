@@ -36,6 +36,7 @@ public class StudentController {
 	public void addStud(@RequestBody Student stud)
 	{
 		manager.addStudent(stud);
+		System.out.println("Student add successful");
 	}
 	
 	@DeleteMapping("/delete/{id}")
